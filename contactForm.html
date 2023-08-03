@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="contactForm.css" />
+  </head>
+  <body>
+    <div class="allRows">
+      <form id="Contact-Form">
+        <div>
+          <label for="firstName"></label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="First Name"
+            required
+          />
+        </div>
+        <div>
+          <label for="lastName"></label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+        <div>
+          <label> Gender </label>
+          <div class="radio-group">
+            <label>
+              <input
+                type="radio"
+                name="gender"
+                value="male"
+                class="radio-btn"
+                required
+              />
+              <span class="radio-name"> M </span>
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="gender"
+                value="female"
+                class="radio-btn"
+                required
+              />
+              <span class="radio-name"> F </span>
+            </label>
+          </div>
+        </div>
+        <div>
+          <label for="message"></label>
+          <textarea
+            id="message"
+            class="text-position"
+            name="message"
+            placeholder="Your message here..."
+            required
+          ></textarea>
+        </div>
+        <div>
+          <button class="submit-btn" type="submit">Submit</button>
+        </div>
+      </form>
+      <img class="img-style" src="AUS open.jpg" alt="Image" />
+    </div>
+
+    <div id="green-banner" class="hidden">
+      <span> <img src="check.jpg" id="checkIcon" /></span>
+      <p class="message-on-banner">
+        Thank you for buying the ticket, <span id="firstName"></span>
+      </p>
+      <button class="x-btn" id="closeButton"></button>
+    </div>
+    <div id="alert-message" class="hidden"></div>
+    <script src="contactForm.js" async defer></script>
+  </body>
+</html>
